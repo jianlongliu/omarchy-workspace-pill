@@ -41,7 +41,7 @@ BarWidget {
   // Geometry: very small dots, the current one expands slightly.
   readonly property real dot: root.vertical ? root.barSize * 0.32 : Math.max(7, Math.round(root.barSize * 0.28))
   readonly property real expanded: root.vertical ? dot : dot * 2.6
-  readonly property real spacing: dot * 0.7
+  readonly property real spacing: dot * 0.5
 
   readonly property color base: root.bar ? root.bar.barForeground : Color.foreground
   readonly property color dim: Qt.alpha(base, 0.34)
